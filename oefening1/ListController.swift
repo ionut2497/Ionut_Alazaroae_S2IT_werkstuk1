@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ListController.swift
 //  oefening1
 //
 //  Created by student on 01/06/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ListController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,0 +1,18 @@
+
+/* Class = "UITabBarController"; title = "Location"; ObjectID = "BxQ-Io-0at"; */
+"BxQ-Io-0at.title" = "Location";
+
+/* Class = "UITableViewController"; title = "MVP List"; ObjectID = "VTx-iv-Cpf"; */
+"VTx-iv-Cpf.title" = "MVP List";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "hlk-Ak-whz"; */
+"hlk-Ak-whz.title" = "Root View Controller";
+
+/* Class = "UITabBarItem"; title = "Best MVP"; ObjectID = "iGc-of-NUG"; */
+"iGc-of-NUG.title" = "Best MVP";
+
+/* Class = "UITabBarItem"; title = "Location MVP"; ObjectID = "mx9-F4-QMu"; */
+"mx9-F4-QMu.title" = "Location MVP";
+
+/* Class = "UITabBarItem"; title = "Best MVP"; ObjectID = "pAL-Eh-W67"; */
+"pAL-Eh-W67.title" = "Best MVP";
