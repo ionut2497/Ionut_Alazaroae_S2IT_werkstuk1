@@ -64,7 +64,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Best MVP" image="thumbs-up" id="iGc-of-NUG"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="hlk-Ak-whz"/>
+                    <navigationItem key="navigationItem" title="Best MVP Players" id="hlk-Ak-whz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhE-mX-6pA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -88,7 +88,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="b0U-nF-FHh" appends="YES" id="0l8-Pa-d4H"/>
+                                    <outletCollection property="gestureRecognizers" destination="LVY-7A-xqX" appends="YES" id="xuM-Vz-i8r"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="first" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iww-Wx-fBO">
@@ -149,9 +149,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lz2-ly-Myd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="b0U-nF-FHh">
+                <tapGestureRecognizer id="LVY-7A-xqX">
                     <connections>
-                        <action selector="testTap:" destination="VUh-2I-UWc" id="6Mc-Tp-OPb"/>
+                        <action selector="TapOnIt:" destination="VUh-2I-UWc" id="A0L-nZ-b9A"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

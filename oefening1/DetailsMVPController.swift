@@ -34,7 +34,7 @@ class DetailsMVPController: UIViewController ,MKMapViewDelegate{
         self.myFirst.text = person.name
         self.myLast.text = person.lastname
         self.myPhone.text = person.phonenum
-        
+        myImage.isUserInteractionEnabled = true
         let loc = CLLocationCoordinate2DMake(person.locationLatitude, person.locationLongitude)
         let span = MKCoordinateSpanMake(0.2, 0.2)
         let region = MKCoordinateRegion(center: loc, span: span)
@@ -47,27 +47,36 @@ class DetailsMVPController: UIViewController ,MKMapViewDelegate{
 
         
     }
-    
-    @IBAction func testTap(_ sender: UITapGestureRecognizer) {
-        NSLog("Test")
-        
-        let imageView = sender.view as! UIImageView
-        let newImageView = UIImageView(image: imageView.image)
-        newImageView.frame = UIScreen.main.bounds
-        newImageView.backgroundColor = .black
-        newImageView.contentMode = .scaleAspectFit
-        newImageView.isUserInteractionEnabled = true
+    @IBAction func TapOnIt(_ sender: UITapGestureRecognizer) {
+        print("Image tapped")
+        //De imageview is degene waarop we klikken
+        let oldView = sender.view as! UIImageView
+        //We maken een andere imageview , degene die fulscreen gaat
+        let newView = UIImageView(image: oldView.image)
+        //We maken die fullscreen
+        newView.frame = UIScreen.main.bounds
+        //we gaan de afbeelding stretchen
+        newView.contentMode = .scaleAspectFit
+        //We zetten de achtegrond kleur zwart
+        newView.backgroundColor = .white
+        //gebruiker kan op de afbeelding klikken
+        newView.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
-        newImageView.addGestureRecognizer(tap)
-        self.view.addSubview(newImageView)
+        //Voeg een UITAP op de nieuwe UIImageView
+        newView.addGestureRecognizer(tap)
+        //Link die aan de functie onderaan
+        self.view.addSubview(newView)
+        //Toon niet de navbar
         self.navigationController?.isNavigationBarHidden = true
+        //Toon niet de tabbar
         self.tabBarController?.tabBar.isHidden = true
+    }
+    
 
-    }
-    @IBAction func tappedOnImage(_ sender: UITapGestureRecognizer) {
-        
-       
-    }
+    
+    
+    
+    
     @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
         self.navigationController?.isNavigationBarHidden = false
         self.tabBarController?.tabBar.isHidden = false
