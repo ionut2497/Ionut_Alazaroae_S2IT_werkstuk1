@@ -5,6 +5,12 @@
 //  Created by student on 01/06/18.
 //  Copyright © 2018 student. All rights reserved.
 //
+/*
+ Source :
+ https://www.youtube.com/watch?v=hRextIKJCnI
+ https://www.youtube.com/watch?v=wU1XN-Gk1LM
+ https://www.youtube.com/watch?v=UyiuX8jULF4
+ */
 
 import UIKit
 import MapKit
